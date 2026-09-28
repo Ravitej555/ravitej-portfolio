@@ -235,6 +235,7 @@ nav{
 }
 .about-card:hover{border-color:var(--border-lit);background:var(--card-hover);transform:translateY(-3px)}
 .about-icon{font-size:1.4rem;margin-bottom:0.8rem}
+.ai-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,rgba(94,184,245,0.18),rgba(155,109,255,0.18));border:1px solid rgba(94,184,245,0.25);font-size:0.7rem;font-weight:700;letter-spacing:0.04em;color:var(--blue);font-family:var(--b)}
 .about-card h3{font-family:var(--h);font-size:0.95rem;font-weight:700;margin-bottom:0.45rem}
 .about-card p{color:var(--muted2);font-size:0.855rem;line-height:1.65}
 
@@ -265,7 +266,7 @@ nav{
 .chip.orange{background:rgba(245,167,66,0.07);border-color:rgba(245,167,66,0.2);color:var(--orange)}
 .tl-bullets{list-style:none;padding:0}
 .tl-bullets li{color:var(--muted2);font-size:0.875rem;padding:0.3rem 0 0.3rem 1.1rem;position:relative;line-height:1.6}
-.tl-bullets li::before{content:'\\203A';position:absolute;left:0;color:var(--blue);font-weight:700;font-size:1rem}
+.tl-bullets li::before{content:'>';position:absolute;left:0;color:var(--blue);font-weight:700;font-size:1rem}
 
 /* === PROJECTS === */
 .projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
@@ -291,7 +292,7 @@ nav{
 .proj-desc{color:var(--muted2);font-size:0.86rem;line-height:1.7;margin-bottom:1.1rem}
 .proj-bullets{list-style:none;padding:0;margin-bottom:1.25rem}
 .proj-bullets li{color:var(--muted2);font-size:0.82rem;padding:0.28rem 0 0.28rem 1rem;position:relative;line-height:1.55}
-.proj-bullets li::before{content:'\\00B7';position:absolute;left:0;color:var(--green);font-size:1.3rem;line-height:1}
+.proj-bullets li::before{content:'-';position:absolute;left:0;color:var(--green);font-size:1.3rem;line-height:1}
 .proj-link{
   display:inline-flex;align-items:center;gap:0.35rem;
   color:var(--blue);font-size:0.78rem;font-weight:600;text-decoration:none;
@@ -503,19 +504,23 @@ footer{
     </div>
     <div class="about-grid reveal">
       <div class="about-card">
-        <div class="about-icon">&#127891;</div>`n        <h3>Education</h3>
+        <div class="about-icon"><span class="ai-icon">GR</span></div>
+        <h3>Education</h3>
         <p>B.E. in AI &amp; ML at East West Institute of Technology, Bengaluru. Graduating 2027 with a CGPA of 8.18 through 6 semesters.</p>
       </div>
       <div class="about-card">
-        <div class="about-icon">&#129504;</div>`n        <h3>AI / ML Focus</h3>
+        <div class="about-icon"><span class="ai-icon">AI</span></div>
+        <h3>AI / ML Focus</h3>
         <p>Hands-on experience with supervised learning, feature engineering, neural networks, and end-to-end ML pipelines using Scikit-learn and TensorFlow.</p>
       </div>
       <div class="about-card">
-        <div class="about-icon">&#9881;</div>`n        <h3>Full-Stack Development</h3>
+        <div class="about-icon"><span class="ai-icon">FS</span></div>
+        <h3>Full-Stack Development</h3>
         <p>Building production-grade web applications with React, FastAPI, PostgreSQL, and Docker &mdash; from design through to deployment.</p>
       </div>
       <div class="about-card">
-        <div class="about-icon">&#127919;</div>`n        <h3>Career Direction</h3>
+        <div class="about-icon"><span class="ai-icon">CD</span></div>
+        <h3>Career Direction</h3>
         <p>Seeking AI/ML or software engineering opportunities to apply technical skills to real-world applications and grow within an engineering team.</p>
       </div>
     </div>
@@ -721,7 +726,7 @@ footer{
       <div class="line"></div>
     </div>
     <div class="edu-card reveal">
-      <div class="edu-icon">&#127891;</div>
+      <div class="edu-icon"><span class="ai-icon">BE</span></div>
       <div>
         <div class="edu-deg">B.E. Artificial Intelligence &amp; Machine Learning</div>
         <div class="edu-school">East West Institute of Technology, Bengaluru</div>
@@ -745,34 +750,34 @@ footer{
     </div>
     <div class="certs-grid reveal">
       <div class="cert-card">
-        <div class="cert-icon">&#11088;</div>
+        <div class="cert-icon"><span class="ai-icon" style="color:var(--orange)">DL</span></div>
         <div>
           <div class="cert-org">Microsoft</div>`n          <div class="cert-name">AI-103 &mdash; Developing AI Apps and Agents on Azure</div>
         </div>
       </div>
       <div class="cert-card">
-        <div class="cert-icon">&#128310;</div>
+        <div class="cert-icon"><span class="ai-icon" style="color:var(--blue)">MS</span></div>
         <div>
           <div class="cert-org">Microsoft</div>
           <div class="cert-name">DP-800 &mdash; Administering Microsoft Fabric</div>
         </div>
       </div>
       <div class="cert-card">
-        <div class="cert-icon">&#127807;</div>
+        <div class="cert-icon"><span class="ai-icon" style="color:var(--green)">IS</span></div>
         <div>
           <div class="cert-org">Infosys Springboard</div>
           <div class="cert-name">Artificial Intelligence &amp; Machine Learning Virtual Internship</div>
         </div>
       </div>
       <div class="cert-card">
-        <div class="cert-icon">&#9889;</div>
+        <div class="cert-icon"><span class="ai-icon" style="color:var(--orange)">FR</span></div>
         <div>
           <div class="cert-org">FlyRank.ai</div>
           <div class="cert-name">Front-end AI Engineering Internship &mdash; Completed Sep 2026</div>
         </div>
       </div>
       <div class="cert-card">
-        <div class="cert-icon">&#128188;</div>
+        <div class="cert-icon"><span class="ai-icon" style="color:var(--purple)">DL</span></div>
         <div>
           <div class="cert-org">Deloitte via Forage</div>
           <div class="cert-name">Deloitte Technology Job Simulation</div>
